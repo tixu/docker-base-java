@@ -41,7 +41,6 @@ RUN  cd /tmp && \
     ln -s $JAVA_HOME/bin/java /usr/bin/java && \
     ln -s $JAVA_HOME/bin/javac /usr/bin/javac && \
     rm /tmp/* /var/cache/apk/* && \ 
-
     rm $JAVA_HOME/src.zip && \
     rm $JAVA_HOME/javafx-src.zip
 
