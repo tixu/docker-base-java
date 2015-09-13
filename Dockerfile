@@ -40,5 +40,8 @@ RUN  cd /tmp && \
     ln -s "java-${JAVA_VERSION_MAJOR}-oracle" $JAVA_HOME && \
     ln -s $JAVA_HOME/bin/java /usr/bin/java && \
     ln -s $JAVA_HOME/bin/javac /usr/bin/javac && \
-    rm /tmp/* /var/cache/apk/*
+    rm /tmp/* /var/cache/apk/* && \ 
+
+    rm $JAVA_HOME/src.zip && \
+    rm $JAVA_HOME/javafx-src.zip
 
