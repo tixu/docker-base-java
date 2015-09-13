@@ -11,6 +11,10 @@ ENV JAVA_VERSION_MAJOR 8
 ENV JAVA_VERSION_MINOR 45
 ENV JAVA_VERSION_BUILD 14
 
+#Optional proxy support
+#ENV    http_proxy http://xxxx.be:3128
+#ENV    https_proxy http://xxxx.be:3128
+
 # Set environment
 ENV JAVA_HOME /usr/lib/jvm/java-${JAVA_VERSION_MAJOR}-oracle
 ENV PATH ${PATH}:${JAVA_HOME}/bin
